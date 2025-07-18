@@ -1,7 +1,9 @@
 # Neural Networks WASM Project
 
 ## Overview
-This project is a Rust-based neural network simulation, compiled to WebAssembly (WASM) and consumed via a modern JavaScript/TypeScript frontend. It features genetic algorithms, neural network layers, and a simulation environment visualized in the browser. The codebase is modular, with separate libraries for genetic algorithms, neural networks, and simulation logic.
+Projekt symuluje "ptaki uczące się zjadać pożywienie". Używa algorytmu genetycznego i prostych konceptów dotyczących sieci neuronowych. 
+Logika ewolucji i uczenia została zaimplementowana w języku Rust i skompilowana do Web-assembly tak, aby projekt można było odpalić w przeglądarce.
+
 
 ## Tech Stack
 - **Rust**: Core logic, neural networks, genetic algorithms, simulation
@@ -54,6 +56,3 @@ npm run build
 - If you want to use TypeScript, add it to the frontend (`npm install --save-dev typescript`) and configure `tsconfig.json`.
 - Make sure the WASM glue code is built and available in `www/pkg` or update imports accordingly.
 - For troubleshooting WASM imports, always use relative paths in browser code (e.g., `import ... from "./pkg/lib_simulation_wasm.js"`).
-
-## License
-MIT OR Apache-2.0
